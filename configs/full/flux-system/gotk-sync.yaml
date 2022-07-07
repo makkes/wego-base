@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./configs/full/flux-system
+  path: ./configs/full
   prune: true
   sourceRef:
     kind: GitRepository
