@@ -17,6 +17,15 @@ spec:
   releaseName: metallb
   install:
     createNamespace: true
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: kind-pool
+  namespace: metallb-system
+spec:
+  addresses:
+  - 172.18.255.1-172.18.255.254
   values:
       configInline:
         address-pools:
@@ -24,3 +33,12 @@ spec:
           protocol: layer2
           addresses:
           - 172.18.255.1-172.18.255.254
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: kind
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+  - kind-pool
