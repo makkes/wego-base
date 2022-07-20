@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    foo: a-${bar}-z
+    foo: ${bar}
     app: nginx
   name: nginx
   namespace: default
