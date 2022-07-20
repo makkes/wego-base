@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    test: ${test:=hello}
+    test: "${test:=hello}"
     app: nginx
   name: nginx
   namespace: default
