@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: nginx
   name: nginx
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -21,4 +21,3 @@ spec:
       - image: nginx:latest
         name: nginx
         resources: {}
-status: {}
