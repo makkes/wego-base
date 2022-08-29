@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./configs/full/wgc-ingress
+  path: ./clusters/prod/wgc-ingress
   prune: true
   sourceRef:
     kind: GitRepository

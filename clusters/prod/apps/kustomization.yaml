@@ -4,3 +4,5 @@ resources:
 - ../../../apps/metallb
 - ../../../apps/ingress-nginx
 - ../../../apps/kube-prometheus-stack
+patchesStrategicMerge:
+  - metallb-version.yaml
