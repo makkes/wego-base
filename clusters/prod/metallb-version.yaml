@@ -3,7 +3,5 @@ kind: ConfigMap
 metadata:
   name: metallb-vars
   namespace: flux-system
-spec:
-  chart:
-    spec:
-      version: 0.13.2
+data:
+  version: 0.13.2
