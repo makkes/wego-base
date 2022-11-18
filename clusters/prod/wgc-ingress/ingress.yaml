@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 172.18.255.1.sslip.io
+  - host: wego.172.18.255.1.sslip.io
     http:
       paths:
       - path: /
