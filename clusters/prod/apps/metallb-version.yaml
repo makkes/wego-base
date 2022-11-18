@@ -4,4 +4,4 @@ metadata:
   name: metallb-vars
   namespace: flux-system
 data:
-  version: 0.13.2
+  version: 0.13.6
