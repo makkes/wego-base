@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: wego
-  namespace: default
+  namespace: weave-gitops
 spec:
   ingressClassName: nginx
   rules:
@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: dev-weave-gitops
+            name: weave-gitops
             port:
               number: 9001
