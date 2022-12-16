@@ -4,5 +4,4 @@ resources:
 - ns.yaml
 - release.yaml
 - repo.yaml
-- secret_admin-user.yaml
 namespace: weave-gitops
