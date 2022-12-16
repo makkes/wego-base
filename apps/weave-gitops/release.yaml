@@ -11,5 +11,8 @@ spec:
         kind: HelmRepository
         name: weave-gitops
   interval: 1h0m0s
-
-
+  values:
+    adminUser:
+      create: true
+      username: admin
+      passwordHash: $2a$10$uAz7WhO2ZOPrgcP0jsEjSuv9EVtOZjHgjse8sSgPmr0mq7KgefYNW
