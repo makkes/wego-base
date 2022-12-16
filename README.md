@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-1. Clone this repository
+1. Fork this repository into your own account
 1. `kind create cluster`
 1. `export GITHUB_TOKEN=<A PERSONAL ACCESS TOKEN>`
 1. `export OWNER=<YOUR GITHUB HANDLE>`
