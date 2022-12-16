@@ -1,15 +1,18 @@
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-kind: Kustomization
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
-  name: wego-ingress
-  namespace: flux-system
+  name: wego
+  namespace: weave-gitops
 spec:
-  interval: 10m0s
-  path: ./clusters/prod/wego-ingress
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-  dependsOn:
-    - name: ingress-nginx-release
+  ingressClassName: nginx
+  rules:
+  - host: wego.172.18.255.1.sslip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: weave-gitops
+            port:
+              number: 9001
