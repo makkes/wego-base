@@ -15,11 +15,11 @@
 All apps' manifests are stored in `apps/`. These are the available apps in that directory:
 
 <!-- APPS -->
-- [ingress-nginx](https://kubernetes.github.io/ingress-nginx)
+- Repository: [ingress-nginx](https://kubernetes.github.io/ingress-nginx)
   - ingress-nginx
-- [metallb](https://metallb.github.io/metallb)
+- Repository: [metallb](https://metallb.github.io/metallb)
   - metallb
-- [prometheus-community](https://prometheus-community.github.io/helm-charts)
+- Repository: [prometheus-community](https://prometheus-community.github.io/helm-charts)
   - kube-prometheus-stack
 <!-- APPS -->
 
