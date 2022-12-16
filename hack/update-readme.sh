@@ -11,7 +11,7 @@ apps=$(
         repo=$(yq e 'select(.kind=="HelmRepository")|({"name":.metadata.name,"url":.spec.url})' "$repo")
         if [[ -n "$repo" ]] ; then
             reponame=$(echo "$repo"|yq .name)
-            echo "- Repository: [$reponame]($(echo "$repo"|yq .url))"
+            echo "- Repository: $(echo "$repo"|yq .url)"
             echo "$hrfiles" | xargs yq 'select(.spec.chart.spec.sourceRef.name=="'"$reponame"'") | .spec.chart.spec.chart' | \
                 xargs printf "  - %s\n"
         fi
