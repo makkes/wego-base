@@ -17,6 +17,8 @@ All apps' manifests are stored in `apps/`. These are the available apps in that 
 <!-- APPS -->
 - Repository: https://kubernetes.github.io/ingress-nginx
   - ingress-nginx
+- Repository: oci://ghcr.io/weaveworks/charts
+  - weave-gitops
 - Repository: https://metallb.github.io/metallb
   - metallb
 - Repository: https://prometheus-community.github.io/helm-charts
